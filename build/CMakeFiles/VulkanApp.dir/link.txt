@@ -1,0 +1,3 @@
+D:\cmake\bin\cmake.exe -E rm -f CMakeFiles\VulkanApp.dir/objects.a
+D:\minGW\mingw64\bin\ar.exe qc CMakeFiles\VulkanApp.dir/objects.a @CMakeFiles\VulkanApp.dir\objects1.rsp
+D:\minGW\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\VulkanApp.dir/objects.a -Wl,--no-whole-archive -o VulkanApp.exe -Wl,--out-implib,libVulkanApp.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\VulkanApp.dir\linkLibs.rsp
