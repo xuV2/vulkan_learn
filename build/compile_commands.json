@@ -1,8 +1,8 @@
 [
 {
   "directory": "D:/vulkan_learn/build",
-  "command": "D:\\minGW\\mingw64\\bin\\g++.exe  @CMakeFiles/VulkanApp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\VulkanApp.dir\\src\\test.cpp.obj -c D:\\vulkan_learn\\src\\test.cpp",
-  "file": "D:/vulkan_learn/src/test.cpp",
-  "output": "CMakeFiles/VulkanApp.dir/src/test.cpp.obj"
+  "command": "D:\\minGW\\mingw64\\bin\\g++.exe  @CMakeFiles/VulkanApp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\VulkanApp.dir\\src\\main.cpp.obj -c D:\\vulkan_learn\\src\\main.cpp",
+  "file": "D:/vulkan_learn/src/main.cpp",
+  "output": "CMakeFiles/VulkanApp.dir/src/main.cpp.obj"
 }
 ]

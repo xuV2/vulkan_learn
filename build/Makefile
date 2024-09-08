@@ -128,29 +128,29 @@ VulkanApp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\VulkanApp.dir\build.make CMakeFiles/VulkanApp.dir/build
 .PHONY : VulkanApp/fast
 
-src/test.obj: src/test.cpp.obj
-.PHONY : src/test.obj
+src/main.obj: src/main.cpp.obj
+.PHONY : src/main.obj
 
 # target to build an object file
-src/test.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\VulkanApp.dir\build.make CMakeFiles/VulkanApp.dir/src/test.cpp.obj
-.PHONY : src/test.cpp.obj
+src/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VulkanApp.dir\build.make CMakeFiles/VulkanApp.dir/src/main.cpp.obj
+.PHONY : src/main.cpp.obj
 
-src/test.i: src/test.cpp.i
-.PHONY : src/test.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-src/test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\VulkanApp.dir\build.make CMakeFiles/VulkanApp.dir/src/test.cpp.i
-.PHONY : src/test.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VulkanApp.dir\build.make CMakeFiles/VulkanApp.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-src/test.s: src/test.cpp.s
-.PHONY : src/test.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-src/test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\VulkanApp.dir\build.make CMakeFiles/VulkanApp.dir/src/test.cpp.s
-.PHONY : src/test.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VulkanApp.dir\build.make CMakeFiles/VulkanApp.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... VulkanApp
-	@echo ... src/test.obj
-	@echo ... src/test.i
-	@echo ... src/test.s
+	@echo ... src/main.obj
+	@echo ... src/main.i
+	@echo ... src/main.s
 .PHONY : help
 
 

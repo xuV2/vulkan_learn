@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/VulkanApp.dir/src/test.cpp.obj"
-  "CMakeFiles/VulkanApp.dir/src/test.cpp.obj.d"
+  "CMakeFiles/VulkanApp.dir/src/main.cpp.obj"
+  "CMakeFiles/VulkanApp.dir/src/main.cpp.obj.d"
   "VulkanApp.exe"
   "VulkanApp.exe.manifest"
   "VulkanApp.pdb"

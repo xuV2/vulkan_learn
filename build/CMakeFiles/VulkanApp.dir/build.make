@@ -68,29 +68,29 @@ include CMakeFiles/VulkanApp.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/VulkanApp.dir/flags.make
 
-CMakeFiles/VulkanApp.dir/src/test.cpp.obj: CMakeFiles/VulkanApp.dir/flags.make
-CMakeFiles/VulkanApp.dir/src/test.cpp.obj: CMakeFiles/VulkanApp.dir/includes_CXX.rsp
-CMakeFiles/VulkanApp.dir/src/test.cpp.obj: D:/vulkan_learn/src/test.cpp
-CMakeFiles/VulkanApp.dir/src/test.cpp.obj: CMakeFiles/VulkanApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\vulkan_learn\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/VulkanApp.dir/src/test.cpp.obj"
-	D:\minGW\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VulkanApp.dir/src/test.cpp.obj -MF CMakeFiles\VulkanApp.dir\src\test.cpp.obj.d -o CMakeFiles\VulkanApp.dir\src\test.cpp.obj -c D:\vulkan_learn\src\test.cpp
+CMakeFiles/VulkanApp.dir/src/main.cpp.obj: CMakeFiles/VulkanApp.dir/flags.make
+CMakeFiles/VulkanApp.dir/src/main.cpp.obj: CMakeFiles/VulkanApp.dir/includes_CXX.rsp
+CMakeFiles/VulkanApp.dir/src/main.cpp.obj: D:/vulkan_learn/src/main.cpp
+CMakeFiles/VulkanApp.dir/src/main.cpp.obj: CMakeFiles/VulkanApp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\vulkan_learn\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/VulkanApp.dir/src/main.cpp.obj"
+	D:\minGW\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VulkanApp.dir/src/main.cpp.obj -MF CMakeFiles\VulkanApp.dir\src\main.cpp.obj.d -o CMakeFiles\VulkanApp.dir\src\main.cpp.obj -c D:\vulkan_learn\src\main.cpp
 
-CMakeFiles/VulkanApp.dir/src/test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/VulkanApp.dir/src/test.cpp.i"
-	D:\minGW\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\vulkan_learn\src\test.cpp > CMakeFiles\VulkanApp.dir\src\test.cpp.i
+CMakeFiles/VulkanApp.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/VulkanApp.dir/src/main.cpp.i"
+	D:\minGW\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\vulkan_learn\src\main.cpp > CMakeFiles\VulkanApp.dir\src\main.cpp.i
 
-CMakeFiles/VulkanApp.dir/src/test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/VulkanApp.dir/src/test.cpp.s"
-	D:\minGW\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\vulkan_learn\src\test.cpp -o CMakeFiles\VulkanApp.dir\src\test.cpp.s
+CMakeFiles/VulkanApp.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/VulkanApp.dir/src/main.cpp.s"
+	D:\minGW\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\vulkan_learn\src\main.cpp -o CMakeFiles\VulkanApp.dir\src\main.cpp.s
 
 # Object files for target VulkanApp
 VulkanApp_OBJECTS = \
-"CMakeFiles/VulkanApp.dir/src/test.cpp.obj"
+"CMakeFiles/VulkanApp.dir/src/main.cpp.obj"
 
 # External object files for target VulkanApp
 VulkanApp_EXTERNAL_OBJECTS =
 
-VulkanApp.exe: CMakeFiles/VulkanApp.dir/src/test.cpp.obj
+VulkanApp.exe: CMakeFiles/VulkanApp.dir/src/main.cpp.obj
 VulkanApp.exe: CMakeFiles/VulkanApp.dir/build.make
 VulkanApp.exe: CMakeFiles/VulkanApp.dir/linkLibs.rsp
 VulkanApp.exe: CMakeFiles/VulkanApp.dir/objects1.rsp
