@@ -128,6 +128,30 @@ VulkanApp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\VulkanApp.dir\build.make CMakeFiles/VulkanApp.dir/build
 .PHONY : VulkanApp/fast
 
+src/first_app.obj: src/first_app.cpp.obj
+.PHONY : src/first_app.obj
+
+# target to build an object file
+src/first_app.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VulkanApp.dir\build.make CMakeFiles/VulkanApp.dir/src/first_app.cpp.obj
+.PHONY : src/first_app.cpp.obj
+
+src/first_app.i: src/first_app.cpp.i
+.PHONY : src/first_app.i
+
+# target to preprocess a source file
+src/first_app.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VulkanApp.dir\build.make CMakeFiles/VulkanApp.dir/src/first_app.cpp.i
+.PHONY : src/first_app.cpp.i
+
+src/first_app.s: src/first_app.cpp.s
+.PHONY : src/first_app.s
+
+# target to generate assembly for a file
+src/first_app.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VulkanApp.dir\build.make CMakeFiles/VulkanApp.dir/src/first_app.cpp.s
+.PHONY : src/first_app.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -152,6 +176,54 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\VulkanApp.dir\build.make CMakeFiles/VulkanApp.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/xy_pipeline.obj: src/xy_pipeline.cpp.obj
+.PHONY : src/xy_pipeline.obj
+
+# target to build an object file
+src/xy_pipeline.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VulkanApp.dir\build.make CMakeFiles/VulkanApp.dir/src/xy_pipeline.cpp.obj
+.PHONY : src/xy_pipeline.cpp.obj
+
+src/xy_pipeline.i: src/xy_pipeline.cpp.i
+.PHONY : src/xy_pipeline.i
+
+# target to preprocess a source file
+src/xy_pipeline.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VulkanApp.dir\build.make CMakeFiles/VulkanApp.dir/src/xy_pipeline.cpp.i
+.PHONY : src/xy_pipeline.cpp.i
+
+src/xy_pipeline.s: src/xy_pipeline.cpp.s
+.PHONY : src/xy_pipeline.s
+
+# target to generate assembly for a file
+src/xy_pipeline.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VulkanApp.dir\build.make CMakeFiles/VulkanApp.dir/src/xy_pipeline.cpp.s
+.PHONY : src/xy_pipeline.cpp.s
+
+src/xy_window.obj: src/xy_window.cpp.obj
+.PHONY : src/xy_window.obj
+
+# target to build an object file
+src/xy_window.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VulkanApp.dir\build.make CMakeFiles/VulkanApp.dir/src/xy_window.cpp.obj
+.PHONY : src/xy_window.cpp.obj
+
+src/xy_window.i: src/xy_window.cpp.i
+.PHONY : src/xy_window.i
+
+# target to preprocess a source file
+src/xy_window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VulkanApp.dir\build.make CMakeFiles/VulkanApp.dir/src/xy_window.cpp.i
+.PHONY : src/xy_window.cpp.i
+
+src/xy_window.s: src/xy_window.cpp.s
+.PHONY : src/xy_window.s
+
+# target to generate assembly for a file
+src/xy_window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VulkanApp.dir\build.make CMakeFiles/VulkanApp.dir/src/xy_window.cpp.s
+.PHONY : src/xy_window.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -161,9 +233,18 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... VulkanApp
+	@echo ... src/first_app.obj
+	@echo ... src/first_app.i
+	@echo ... src/first_app.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/xy_pipeline.obj
+	@echo ... src/xy_pipeline.i
+	@echo ... src/xy_pipeline.s
+	@echo ... src/xy_window.obj
+	@echo ... src/xy_window.i
+	@echo ... src/xy_window.s
 .PHONY : help
 
 

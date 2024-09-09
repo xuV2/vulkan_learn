@@ -18,7 +18,12 @@ link_directories(
 )
 
 # 可执行文件
-add_executable(VulkanApp src/main.cpp)
+add_executable(VulkanApp 
+ src/main.cpp
+ src/xy_window.cpp
+ src/first_app.cpp
+ src/xy_pipeline.cpp
+  )
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 
