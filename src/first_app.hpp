@@ -2,6 +2,7 @@
 
 #include "xy_window.hpp"
 #include "xy_pipeline.hpp"
+#include "xy_device.hpp"
 
 
 namespace xy{
@@ -12,8 +13,10 @@ namespace xy{
             void run();
         private:
             XyWindow xyWindow{WIDTH,HEIGHT,"Hello Vulkan!"}; // use this window
-            XyPipeline xyPipeline{"D:/vulkan_learn/src/shader/vert.spv",
-            "D:/vulkan_learn/src/shader/frag.spv"};
+            XyDevice xyDevice{xyWindow};
+            XyPipeline xyPipeline{xyDevice, "D:/vulkan_learn/src/shader/vert.spv",
+            "D:/vulkan_learn/src/shader/frag.spv",
+            XyPipeline::defaultPipelineConfigInfo(WIDTH,HEIGHT)};
 
     };
 }

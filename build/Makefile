@@ -176,6 +176,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\VulkanApp.dir\build.make CMakeFiles/VulkanApp.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/xy_device.obj: src/xy_device.cpp.obj
+.PHONY : src/xy_device.obj
+
+# target to build an object file
+src/xy_device.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VulkanApp.dir\build.make CMakeFiles/VulkanApp.dir/src/xy_device.cpp.obj
+.PHONY : src/xy_device.cpp.obj
+
+src/xy_device.i: src/xy_device.cpp.i
+.PHONY : src/xy_device.i
+
+# target to preprocess a source file
+src/xy_device.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VulkanApp.dir\build.make CMakeFiles/VulkanApp.dir/src/xy_device.cpp.i
+.PHONY : src/xy_device.cpp.i
+
+src/xy_device.s: src/xy_device.cpp.s
+.PHONY : src/xy_device.s
+
+# target to generate assembly for a file
+src/xy_device.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VulkanApp.dir\build.make CMakeFiles/VulkanApp.dir/src/xy_device.cpp.s
+.PHONY : src/xy_device.cpp.s
+
 src/xy_pipeline.obj: src/xy_pipeline.cpp.obj
 .PHONY : src/xy_pipeline.obj
 
@@ -239,6 +263,9 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/xy_device.obj
+	@echo ... src/xy_device.i
+	@echo ... src/xy_device.s
 	@echo ... src/xy_pipeline.obj
 	@echo ... src/xy_pipeline.i
 	@echo ... src/xy_pipeline.s

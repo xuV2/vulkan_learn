@@ -17,12 +17,10 @@ link_directories(
     D:/vulkan/install/Lib 
 )
 
+file(GLOB_RECURSE SRC_FILES "${CMAKE_SOURCE_DIR}/src/*.cpp" "${CMAKE_SOURCE_DIR}/src/*.hpp")
 # 可执行文件
 add_executable(VulkanApp 
- src/main.cpp
- src/xy_window.cpp
- src/first_app.cpp
- src/xy_pipeline.cpp
+  ${SRC_FILES}
   )
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 

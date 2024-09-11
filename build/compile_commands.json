@@ -1,26 +1,32 @@
 [
 {
   "directory": "D:/vulkan_learn/build",
-  "command": "D:\\minGW\\mingw64\\bin\\g++.exe  @CMakeFiles/VulkanApp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\VulkanApp.dir\\src\\main.cpp.obj -c D:\\vulkan_learn\\src\\main.cpp",
-  "file": "D:/vulkan_learn/src/main.cpp",
-  "output": "CMakeFiles/VulkanApp.dir/src/main.cpp.obj"
-},
-{
-  "directory": "D:/vulkan_learn/build",
-  "command": "D:\\minGW\\mingw64\\bin\\g++.exe  @CMakeFiles/VulkanApp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\VulkanApp.dir\\src\\xy_window.cpp.obj -c D:\\vulkan_learn\\src\\xy_window.cpp",
-  "file": "D:/vulkan_learn/src/xy_window.cpp",
-  "output": "CMakeFiles/VulkanApp.dir/src/xy_window.cpp.obj"
-},
-{
-  "directory": "D:/vulkan_learn/build",
   "command": "D:\\minGW\\mingw64\\bin\\g++.exe  @CMakeFiles/VulkanApp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\VulkanApp.dir\\src\\first_app.cpp.obj -c D:\\vulkan_learn\\src\\first_app.cpp",
   "file": "D:/vulkan_learn/src/first_app.cpp",
   "output": "CMakeFiles/VulkanApp.dir/src/first_app.cpp.obj"
 },
 {
   "directory": "D:/vulkan_learn/build",
+  "command": "D:\\minGW\\mingw64\\bin\\g++.exe  @CMakeFiles/VulkanApp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\VulkanApp.dir\\src\\main.cpp.obj -c D:\\vulkan_learn\\src\\main.cpp",
+  "file": "D:/vulkan_learn/src/main.cpp",
+  "output": "CMakeFiles/VulkanApp.dir/src/main.cpp.obj"
+},
+{
+  "directory": "D:/vulkan_learn/build",
+  "command": "D:\\minGW\\mingw64\\bin\\g++.exe  @CMakeFiles/VulkanApp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\VulkanApp.dir\\src\\xy_device.cpp.obj -c D:\\vulkan_learn\\src\\xy_device.cpp",
+  "file": "D:/vulkan_learn/src/xy_device.cpp",
+  "output": "CMakeFiles/VulkanApp.dir/src/xy_device.cpp.obj"
+},
+{
+  "directory": "D:/vulkan_learn/build",
   "command": "D:\\minGW\\mingw64\\bin\\g++.exe  @CMakeFiles/VulkanApp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\VulkanApp.dir\\src\\xy_pipeline.cpp.obj -c D:\\vulkan_learn\\src\\xy_pipeline.cpp",
   "file": "D:/vulkan_learn/src/xy_pipeline.cpp",
   "output": "CMakeFiles/VulkanApp.dir/src/xy_pipeline.cpp.obj"
+},
+{
+  "directory": "D:/vulkan_learn/build",
+  "command": "D:\\minGW\\mingw64\\bin\\g++.exe  @CMakeFiles/VulkanApp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\VulkanApp.dir\\src\\xy_window.cpp.obj -c D:\\vulkan_learn\\src\\xy_window.cpp",
+  "file": "D:/vulkan_learn/src/xy_window.cpp",
+  "output": "CMakeFiles/VulkanApp.dir/src/xy_window.cpp.obj"
 }
 ]

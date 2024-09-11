@@ -14,9 +14,12 @@ namespace xy{
             // 防止创建 XyWindow 对象的拷贝，确保对象的唯一性
             XyWindow(const XyWindow&)=delete;
             XyWindow &operator=(const XyWindow &) = delete;
+            
             bool shouldClose(){
                 return glfwWindowShouldClose(window);
             }
+            void createWindowSurface(VkInstance instance , VkSurfaceKHR *surface);
+            
         private:
             void initWindow();
             const int width;

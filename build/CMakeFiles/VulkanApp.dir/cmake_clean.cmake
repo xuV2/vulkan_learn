@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/VulkanApp.dir/src/first_app.cpp.obj.d"
   "CMakeFiles/VulkanApp.dir/src/main.cpp.obj"
   "CMakeFiles/VulkanApp.dir/src/main.cpp.obj.d"
+  "CMakeFiles/VulkanApp.dir/src/xy_device.cpp.obj"
+  "CMakeFiles/VulkanApp.dir/src/xy_device.cpp.obj.d"
   "CMakeFiles/VulkanApp.dir/src/xy_pipeline.cpp.obj"
   "CMakeFiles/VulkanApp.dir/src/xy_pipeline.cpp.obj.d"
   "CMakeFiles/VulkanApp.dir/src/xy_window.cpp.obj"

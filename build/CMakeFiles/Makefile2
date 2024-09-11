@@ -80,12 +80,12 @@ clean: CMakeFiles/VulkanApp.dir/clean
 CMakeFiles/VulkanApp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\VulkanApp.dir\build.make CMakeFiles/VulkanApp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\VulkanApp.dir\build.make CMakeFiles/VulkanApp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\vulkan_learn\build\CMakeFiles --progress-num=1,2,3,4,5 "Built target VulkanApp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\vulkan_learn\build\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target VulkanApp"
 .PHONY : CMakeFiles/VulkanApp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/VulkanApp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\vulkan_learn\build\CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\vulkan_learn\build\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/VulkanApp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\vulkan_learn\build\CMakeFiles 0
 .PHONY : CMakeFiles/VulkanApp.dir/rule
