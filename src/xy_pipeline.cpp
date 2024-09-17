@@ -24,7 +24,7 @@ namespace xy{
         size_t fileSize = static_cast<size_t>(file.tellg());
         std::vector<char> buffer(fileSize);
         
-        file.seekg(0); // 设置文件流的读指针位置。seekg �? "seek get" 
+        file.seekg(0); // 设置文件流的读指针位置。seekg �? "seek get" 
         file.read(buffer.data(),fileSize);
 
         file.close();
@@ -39,7 +39,7 @@ namespace xy{
         createShaderMoule(fragCode,&fragShaderModule);
         
         
-        VkPipelineShaderStageCreateInfo shaderStage[2];
+        VkPipelineShaderStageCreateInfo shaderStage[2]; // 指定着色器阶段的相关信息
         shaderStage[0].sType = VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO;
         shaderStage[0].stage = VK_SHADER_STAGE_VERTEX_BIT;
         shaderStage[0].module = vertShaderModule;
@@ -48,7 +48,7 @@ namespace xy{
         shaderStage[0].pNext = nullptr;
         shaderStage[0].pSpecializationInfo = nullptr;
 
-        shaderStage[1].sType = VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO;
+        shaderStage[1].sType = VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO; 
         shaderStage[1].stage = VK_SHADER_STAGE_FRAGMENT_BIT;
         shaderStage[1].module = fragShaderModule;
         shaderStage[1].pName = "main";
@@ -56,7 +56,7 @@ namespace xy{
         shaderStage[1].pNext = nullptr;
         shaderStage[1].pSpecializationInfo = nullptr;
 
-        VkPipelineVertexInputStateCreateInfo vertexInputInfo{};
+        VkPipelineVertexInputStateCreateInfo vertexInputInfo{}; // 描述顶点输入的配置 
         vertexInputInfo.sType = VK_STRUCTURE_TYPE_PIPELINE_VERTEX_INPUT_STATE_CREATE_INFO;
         vertexInputInfo.vertexBindingDescriptionCount = 0;
         vertexInputInfo.pVertexBindingDescriptions = nullptr;
@@ -104,11 +104,17 @@ namespace xy{
                 throw std::runtime_error("failed to create shader moudule");
             }
      }
+
+    void XyPipeline::bind(VkCommandBuffer commandBuffer){
+            vkCmdBindPipeline(commandBuffer,VK_PIPELINE_BIND_POINT_GRAPHICS,graphicsPipeline);
+            
+    }
+
     PipelineConfigInfo XyPipeline::defaultPipelineConfigInfo(uint32_t width, uint32_t height){
             PipelineConfigInfo configInfo{};
             configInfo.inputAssemblyInfo.sType = VK_STRUCTURE_TYPE_PIPELINE_INPUT_ASSEMBLY_STATE_CREATE_INFO;
-            configInfo.inputAssemblyInfo.topology = VK_PRIMITIVE_TOPOLOGY_TRIANGLE_LIST;  // ͼԪ���ͣ����б�
-            configInfo.inputAssemblyInfo.primitiveRestartEnable = VK_FALSE;  // ����ͼԪ����
+            configInfo.inputAssemblyInfo.topology = VK_PRIMITIVE_TOPOLOGY_TRIANGLE_LIST;  // ͼԪ���ͣ����б�
+            configInfo.inputAssemblyInfo.primitiveRestartEnable = VK_FALSE;  // ����ͼԪ����
             
             configInfo.viewport.x = 0.0f;
             configInfo.viewport.y = 0.0f;

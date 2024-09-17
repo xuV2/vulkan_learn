@@ -10,8 +10,8 @@ namespace xy{
         public:
             XyWindow(int w,int h,std::string name);
             ~XyWindow();
-            // destroy 删除�? XyWindow 类的拷贝构造函数和拷贝赋值运算符
-            // 防止创建 XyWindow 对象的拷贝，确保对象的唯一�?
+            // destroy 删除�? XyWindow 类的拷贝构造函数和拷贝赋值运算符
+            // 防止创建 XyWindow 对象的拷贝，确保对象的唯一�?
             XyWindow(const XyWindow&)=delete;
             XyWindow &operator=(const XyWindow &) = delete;
             
