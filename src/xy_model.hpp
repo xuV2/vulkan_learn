@@ -12,9 +12,10 @@ namespace xy{
             struct Vertex {
                 glm::vec2 position;
 
-                static std::vector<VkVertexInputBindingDescription>getBindingDescription();
+                static std::vector<VkVertexInputBindingDescription>getBindingDescriptions();
+                static std::vector<VkVertexInputAttributeDescription>getAttributeDescriptions();
             };
-            XyModel();
+            XyModel(XyDevice &device,const std::vector<Vertex>&vertices);
             ~XyModel();
 
             XyModel(const XyModel&)=delete;
@@ -22,6 +23,8 @@ namespace xy{
             void bind(VkCommandBuffer commandBuffer);
             void draw(VkCommandBuffer commandBuffer);
         private:
+           void createVertexBuffers(const std::vector<Vertex> &vertices);
+
            XyDevice &xyDevice;
            VkBuffer vertexBuffer;
            VkDeviceMemory vertexBufferMemory;
