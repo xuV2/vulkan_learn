@@ -4,6 +4,8 @@
 #include "xy_pipeline.hpp"
 #include "xy_device.hpp"
 #include "xy_swap_chain.hpp"
+#include "xy_model.hpp"
+
 #include <memory>
 #include <vector>
 
@@ -22,6 +24,7 @@ namespace xy{
 
             void run();
         private:
+            void loadModels();
             void createPipelineLayout();
             void createPipeline();
             void createCommandBuffers();
@@ -33,6 +36,8 @@ namespace xy{
             std::unique_ptr<XyPipeline>xyPipeline;
             VkPipelineLayout pipelineLayout;
             std::vector<VkCommandBuffer> commandBuffers;
+            std::unique_ptr<XyModel>xyModel;
+
             // XyPipeline xyPipeline{xyDevice, "D:/vulkan_learn/src/shader/vert.spv",
             // "D:/vulkan_learn/src/shader/frag.spv",
             // XyPipeline::defaultPipelineConfigInfo(WIDTH,HEIGHT)};

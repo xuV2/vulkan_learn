@@ -4,6 +4,7 @@
 
 namespace xy{
     FirstAPP::FirstAPP(){
+        loadModels();
         createPipelineLayout();
         createPipeline();
         createCommandBuffers();
@@ -19,6 +20,17 @@ namespace xy{
         }
         vkDeviceWaitIdle(xyDevice.device()); // 函数CPU将阻塞直到所有GPU操作完成，方便安全清理
     }
+
+    void FirstAPP::loadModels(){
+        std::vector<XyModel::Vertex> vertices{
+            {{0.0f,-0.5f}},
+            {{0.5f,0.5f}},
+            {{-0.5f,0.5f}}
+        };
+        xyModel = std::make_unique<XyModel>(xyDevice,vertices);
+
+    }
+
     void FirstAPP::createPipelineLayout(){
         VkPipelineLayoutCreateInfo pipelineLayoutInfo{};
         pipelineLayoutInfo.sType = VK_STRUCTURE_TYPE_PIPELINE_LAYOUT_CREATE_INFO;
@@ -76,7 +88,8 @@ namespace xy{
             vkCmdBeginRenderPass(commandBuffers[i],&renderPassInfo,VK_SUBPASS_CONTENTS_INLINE);
 
             xyPipeline->bind(commandBuffers[i]);
-            vkCmdDraw(commandBuffers[i],3,1,0,0);
+            xyModel->bind(commandBuffers[i]);
+            xyModel->draw(commandBuffers[i]);
 
             vkCmdEndRenderPass(commandBuffers[i]);
             if(vkEndCommandBuffer(commandBuffers[i])!=VK_SUCCESS){
