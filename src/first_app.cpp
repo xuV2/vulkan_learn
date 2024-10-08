@@ -23,9 +23,9 @@ namespace xy{
 
     void FirstAPP::loadModels(){
         std::vector<XyModel::Vertex> vertices{
-            {{0.0f,-0.5f}},
-            {{0.5f,0.5f}},
-            {{-0.5f,0.5f}}
+            {{0.0f,-0.5f},{1.0f,0.0f,0.0f}},
+            {{0.5f,0.5f},{0.0f,1.0f,0.0f}},
+            {{-0.5f,0.5f},{0.0f,0.0f,1.0f}}
         };
         xyModel = std::make_unique<XyModel>(xyDevice,vertices);
 
